@@ -44,6 +44,9 @@
 				<a href="#"><img src="themes/img/logo.png" alt=""></a>
 			</figure>
 			<h1 class="animated fadeInDown delay-07s">MATERI VERTEBRATA</h1>
+			<div>
+				<center><a class="link animated fadeInUp delay-1s servicelink btn btn-large btn-info" href="#header" style="display:none; bottom: 20px;right: 30px; position: fixed;" id="myBtn"><i class="fa-arrow-up"></i></a></center>
+			</div>
 			<a class="link animated fadeInUp delay-1s servicelink btn btn-large btn-info" href="#1" style="width: 20%;">MATERI 1</a>
 			<a class="link animated fadeInUp delay-1s servicelink btn btn-large btn-info" href="#2" style="width: 20%;">MATERI 2</a>
 			<a class="link animated fadeInUp delay-1s servicelink btn btn-large btn-info" href="#3" style="width: 20%;">MATERI 3</a>
@@ -296,6 +299,16 @@
 			});
 
 		});
+
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
+				document.getElementById("myBtn").style.display = "block";
+			} else {
+				document.getElementById("myBtn").style.display = "none";
+			}
+		}
 	</script>
 
 </body>

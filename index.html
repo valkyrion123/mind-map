@@ -74,6 +74,12 @@
 	<section class="main-section" id="service">
 		<!--main-section-start-->
 		<div class="container">
+			<div>
+				<center><a class="link animated fadeInUp delay-1s servicelink btn btn-large btn-info" href="#header" style="display:none; bottom: 20px;right: 30px; position: fixed;" id="myBtn"><i class="fa-arrow-up"></i></a></center>
+			</div>
+			<br>
+			<br>
+			<br>
 			<div class="row">
 					<div class="service-list">
 						<div class="service-list-col1">
@@ -256,6 +262,16 @@
 			});
 
 		});
+
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
+				document.getElementById("myBtn").style.display = "block";
+			} else {
+				document.getElementById("myBtn").style.display = "none";
+			}
+		}
 	</script>
 
 </body>

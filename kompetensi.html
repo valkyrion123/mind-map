@@ -82,6 +82,9 @@
 	<section class="main-section" id="1">
 		<!--main-section-start-->
 		<div class="container">
+			<div>
+				<center><a class="link animated fadeInUp delay-1s servicelink btn btn-large btn-info" href="#header" style="display:none; bottom: 20px;right: 30px; position: fixed;" id="myBtn"><i class="fa-arrow-up"></i></a></center>
+			</div>
 			<div class="panel panel-default">
 				<div class="panel-heading">
 				<h3 class="panel-title">SK</h3>
@@ -220,6 +223,16 @@
 			});
 
 		});
+
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
+				document.getElementById("myBtn").style.display = "block";
+			} else {
+				document.getElementById("myBtn").style.display = "none";
+			}
+		}
 	</script>
 
 </body>
